@@ -30,7 +30,7 @@ router.post("/", (req, res) => {
 
   var task = cron.schedule("* * * * *", () => {
     axios({
-      url: "http://localhost:9000/ipn",
+      url: "https://hotblockexpressapi.herokuapp.com/ipn",
       method: "post",
       data: req.body,
     });
