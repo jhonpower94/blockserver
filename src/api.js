@@ -1,3 +1,4 @@
+require("encoding");
 const express = require("express");
 const router = express.Router();
 const serverless = require("serverless-http");
